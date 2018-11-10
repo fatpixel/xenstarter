@@ -26,10 +26,14 @@ executeScript "FileExplorerSettings.ps1";
 executeScript "SystemConfiguration.ps1";
 executeScript "CommonDevTools.ps1";
 executeScript "RemoveDefaultApps.ps1";
-executeScript "HyperV.ps1";
-executeScript "WSL.ps1";
-executeScript "Docker.ps1";
 executeScript "Browsers.ps1";
+
+choco install -y vscode
+choco install -y SublimeText3
+choco install -y notepadplusplus
+choco install -y zeal
+choco install -y scriptcs
+
 
 #--- Tools ---
 code --install-extension msjsdiag.debugger-for-chrome
@@ -44,6 +48,11 @@ choco install sharex -y
 choco install cmder -y
 choco install putty -y # installing because we want the pageant ssh agent4
 choco install puretext -y # paste as plain text with Win + V
+
+executeScript "HyperV.ps1";
+executeScript "WSL.ps1";
+executeScript "Docker.ps1";
+
 
 Enable-UAC
 Enable-MicrosoftUpdate
