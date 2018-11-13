@@ -30,24 +30,30 @@ executeScript "Browsers.ps1";
 
 choco install -y vscode
 choco install -y SublimeText3
+choco install -y sublimetext3.packagecontrol
+choco install -y jivkok.sublimetext3.packages
 choco install -y notepadplusplus
 choco install -y zeal
 choco install -y scriptcs
+choco install -y freevideoeditor
+choco install -y openoffice
 
 
 #--- Tools ---
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension msjsdiag.debugger-for-edge
 
-choco install dropbox -y
-choco install slack -y
-choco install winscp -y
-choco install HeidiSQL -y
-choco install notepadplusplus -y
-choco install sharex -y
-choco install cmder -y
-choco install putty -y # installing because we want the pageant ssh agent4
-choco install puretext -y # paste as plain text with Win + V
+choco install -y dropbox
+choco install -y slack
+choco install -y winscp
+choco install -y HeidiSQL
+choco install -y mysql.workbench
+choco install -y notepadplusplus
+choco install -y sharex
+choco install -y cmder
+choco install -y putty # installing because we want the pageant ssh agent4
+choco install -y puretext # paste as plain text with Win + V
+choco install -y phpstorm
 
 executeScript "HyperV.ps1";
 executeScript "WSL.ps1";

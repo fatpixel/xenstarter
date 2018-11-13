@@ -13,6 +13,7 @@ choco install -y windows-sdk-10.1
 choco install -y git -params '"/GitAndUnixToolsOnPath /WindowsTerminal"'
 choco install -y yarn
 choco install -y 7zip.install
+choco install -y anaconda3
 choco install -y sysinternals
 choco install -y autohotkey
 choco install -y diffmerge
