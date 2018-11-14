@@ -28,6 +28,8 @@ executeScript "CommonDevTools.ps1";
 executeScript "RemoveDefaultApps.ps1";
 executeScript "Browsers.ps1";
 
+RefreshEnv
+
 choco install -y vscode
 choco install -y SublimeText3
 choco install -y sublimetext3.packagecontrol
@@ -38,6 +40,7 @@ choco install -y scriptcs
 choco install -y freevideoeditor
 choco install -y openoffice
 
+RefreshEnv
 
 #--- Tools ---
 code --install-extension msjsdiag.debugger-for-chrome
@@ -54,6 +57,8 @@ choco install -y cmder
 choco install -y putty # installing because we want the pageant ssh agent4
 choco install -y puretext # paste as plain text with Win + V
 choco install -y phpstorm
+
+RefreshEnv
 
 executeScript "HyperV.ps1";
 executeScript "WSL.ps1";
