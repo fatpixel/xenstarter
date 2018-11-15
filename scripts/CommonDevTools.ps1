@@ -20,3 +20,8 @@ choco install -y sysinternals
 choco install -y diffmerge
 
 
+choco feature disable --name=checksumFiles
+choco feature enable --name=allowGlobalConfirmation
+
+
+

@@ -32,8 +32,8 @@ RefreshEnv
 
 choco install -y vscode
 choco install -y SublimeText3
-choco install -y sublimetext3.packagecontrol
-choco install -y jivkok.sublimetext3.packages
+# choco install -y sublimetext3.packagecontrol
+# choco install -y jivkok.sublimetext3.packages
 choco install -y notepadplusplus
 choco install -y zeal
 choco install -y scriptcs
